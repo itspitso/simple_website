@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+body {
+    background: rgba(47, 0, 255, 0.2);
+    background-image: url(./images/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg), linear-gradient(135deg, rgba(47, 0, 255, 0.2) 0%, rgba(47, 0, 225, 0.2) 100%);
+    background-size: cover;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f8f3ea
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    align-self: center;
+    height: 100vh;
+    width: 80%;
+}
+
+.element {
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 153, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    justify-self: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.navbar a:link, 
+.navbar a:visited,
+button a:link,
+button a:visited {
+    color:#f8f3ea;
+}
+
+.navbar a:hover,
+button a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.navbar a:active,
+.projects a:active,
+button a:active {
+    color: rgb(0, 153, 255);
+    font-style: bold;
+}
+
+
+.home, 
+.about,
+.projects-page, 
+.contact-me {
+    text-align: center;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 14px;
+    border:rgb(0, 153, 255) solid 1px;
+    background-color: rgba(0, 153, 255, 0.2);
+    color: #f8f3ea;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.left {
+    margin-right: 5px;
+}
+
+.right {
+    margin-left: 5px;
+}
+h2 {
+    padding: 20px;
+    top:0;
+}
+
+.about p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.about ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.skill-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 50px 1fr;
+}
+
+.skill-section h2 {
+    grid-row: 1;
+    grid-column: 1 / 8;
+    padding: 20px;
+}
+
+.skills {
+    padding-top: 20px;
+    grid-row: 2;
+    width: 100px;
+    border-radius: 15px;
+    /*background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 153, 255, 0.2);
+    /* border:rgb(0, 153, 255) solid 1px; */
+}
+
+.skills p,
+.project-cards p {
+    padding: 5px;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+}
+
+.projects-page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 1fr;
+}
+
+.project-cards {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+
+.projects {
+    border-radius: 16px;
+    width: 200px;
+    height: 225px;
+    border:rgb(0, 153, 255) solid 1px;
+    background-color: rgba(0, 153, 255, 0.2);
+}
+
+.contact-me {
+    display: grid;
+    place-items: center;
+}
+
+.contact-me h3 {
+    margin-top: 24px;
+}
