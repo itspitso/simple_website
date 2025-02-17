@@ -158,9 +158,6 @@ h2 {
     grid-row: 2;
     width: 100px;
     border-radius: 15px;
-    /*background: rgba(255, 255, 255, 0.2);
-    background: rgba(0, 153, 255, 0.2);
-    /* border:rgb(0, 153, 255) solid 1px; */
 }
 
 .skills p,
