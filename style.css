@@ -199,3 +199,8 @@ h2 {
 .contact-me h3 {
     margin-top: 24px;
 }
+
+.contact-me a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
