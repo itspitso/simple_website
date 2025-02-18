@@ -18,6 +18,9 @@ body {
     color: #f8f3ea
 }
 
+p {
+    font-family: 18px;
+}
 .container {
     display: grid;
     place-items: center;
@@ -34,8 +37,7 @@ body {
     margin: auto;
     padding: 20px;
     display: grid;
-    background: rgba(255, 255, 255, 0.2);
-    background: rgba(0, 153, 255, 0.2);
+    background: rgba(0, 153, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -105,6 +107,7 @@ button a:active {
 
 button {
     display: inline-block;
+    font-family: 'Nunito', sans-serif;
     width: 120px;
     border: none;
     border-radius: 20px;
@@ -188,7 +191,7 @@ h2 {
     width: 200px;
     height: 225px;
     border:rgb(0, 153, 255) solid 1px;
-    background-color: rgba(0, 153, 255, 0.2);
+    background-color: rgba(0, 153, 255, 0.5);
 }
 
 .contact-me {
