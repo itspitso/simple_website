@@ -108,19 +108,12 @@ button a:active {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
-    width: 150px;
+    width: 148px;
     border-radius: 20px;
     margin: 4px;
     padding: 10px 14px;
     border:rgba(255, 255, 255, 0.2) solid 0.5px;
     color: #f8f3ea;
-}
-
-.btn {
-    padding: 8px;
-    border-radius: 20px;
-    display: inline-block;
-    width: 160px;
 }
 
 .btn:hover {
