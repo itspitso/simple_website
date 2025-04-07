@@ -6,15 +6,14 @@
     margin: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: "Nunito", serif;
+    font-style: normal;
 
 }
 body {
     background: rgba(47, 0, 255, 0.2);
     background-image: url(./images/pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg), linear-gradient(135deg, rgba(47, 0, 255, 0.2) 0%, rgba(47, 0, 225, 0.2) 100%);
     background-size: cover;
-    font-family: "Nunito", serif;
-    font-weight: 400;
-    font-style: normal;
     color: #f8f3ea
 }
 
@@ -39,7 +38,7 @@ p {
     display: grid;
     background: rgba(0, 153, 255, 0.5);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
