@@ -104,33 +104,27 @@ button a:active {
     justify-content: center;
 }
 
-button {
+.btn {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
-    width: 120px;
-    border: none;
+    text-decoration: none;
+    width: 150px;
     border-radius: 20px;
+    margin: 4px;
     padding: 10px 14px;
-    border:rgb(0, 153, 255) solid 1px;
-    background-color: rgba(0, 153, 255, 0.2);
+    border:rgba(255, 255, 255, 0.2) solid 0.5px;
     color: #f8f3ea;
 }
 
-button:hover,
-input[type=submit]:hover {
+.btn {
+    padding: 8px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 160px;
+}
+
+.btn:hover {
     background: rgba(255, 255, 255, 0.2);
-}
-
-.left {
-    margin-right: 5px;
-}
-
-.right {
-    margin-left: 5px;
-}
-h2 {
-    padding: 20px;
-    top:0;
 }
 
 .about p {
