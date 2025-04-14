@@ -36,30 +36,63 @@ p {
     margin: auto;
     padding: 20px;
     display: grid;
-    background: rgba(0, 153, 255, 0.5);
+    /*grid-template-columns: repeat(12, auto);*/
+    grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    grid-template-areas: 
+        "nav"
+        "main"
+        "main"
+        "main"
+        "main"
+        "main";
+    background: rgba(0, 153, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    /*backdrop-filter: blur(5px);*/
+    /*-webkit-backdrop-filter: blur(5px);*/
+}
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .navbar {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
     position: sticky;
-    top: 0;
-    justify-self: center;
 }
 
-.navbar li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-.navbar li a {
-    text-decoration: none;
+.navbar a {
     padding: 10px 15px;
     display: inline-block;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "heading"
+        "content"
+        "content"
+        "content"
+        "content";
+}
+
+.heading {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    
+}
+.content,
+.project-cards,
+.contact-me {
+    grid-area: content;
 }
 
 button a {
@@ -95,8 +128,8 @@ button a:active {
 }
 
 .avatar {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
 }
 .button-container {
     display: flex;
