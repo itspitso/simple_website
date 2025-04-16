@@ -53,6 +53,46 @@ p {
     main {
         grid-area: main;
     }
+
+    .skill-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 1f 1fr;
+    }
+
+    .logos {
+        width: 20px;
+        height: 20px;
+    }
+
+    .skill-section h2 {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .figma, .html, .css {
+        grid-row: 2/3;
+    }
+
+    .jsm .python, .github {
+        grid-row: 3/4;
+    }
+
+    .figma,
+    .js {
+        grid-column: 1/2;
+    }
+
+    .html,
+    .python {
+        grid-column: 2/3;
+    }
+
+    .css, .github {
+        grid-column: 3/4;
+    }
+
+    
     
 }
 
@@ -105,6 +145,27 @@ p {
             "content";
     }
 
+    .skill-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: 50px 1fr;
+    }
+    
+    .skill-section h2 {
+        grid-row: 1;
+        grid-column: 1 / 8;
+        padding: 20px;
+    }
+    
+    .skills {
+        padding-top: 20px;
+        grid-row: 2;
+        width: 100px;
+        border-radius: 15px;
+    }
+
+
+
 }
 
 
@@ -127,11 +188,6 @@ p {
     grid-row-end: 2;
     text-align: center;
     
-}
-.content,
-.project-cards,
-.contact-me {
-    grid-area: content;
 }
 
 button a {
@@ -200,25 +256,6 @@ button a:active {
 .about ul {
     list-style-type: none;
     display: inline-block;
-}
-
-.skill-section {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: 50px 1fr;
-}
-
-.skill-section h2 {
-    grid-row: 1;
-    grid-column: 1 / 8;
-    padding: 20px;
-}
-
-.skills {
-    padding-top: 20px;
-    grid-row: 2;
-    width: 100px;
-    border-radius: 15px;
 }
 
 .skills p,
