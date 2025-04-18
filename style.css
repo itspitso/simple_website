@@ -29,11 +29,13 @@ p {
         align-self: center;
         height: 100vh;
         width: 100%;
+        overflow-y: scroll;
     }
     
     .element {
         width: 90%;
         border-radius: 15px;
+        min-height: 100vh;
         margin: auto;
         padding: 16px;
         display: grid;
@@ -49,24 +51,68 @@ p {
     background: rgba(0, 153, 255, 0.7);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-    overflow-y: scroll;
     }
-    
+
     header {
         grid-area: nav;
     }
     
-    main {
-        grid-area: main;
-        display: grid;
-        display: grid;
-        place-items: center;
+    .logos {
+        width: 25px;
+        height: 25px;
     }
-    
 
+    main,
+    .home,
+    .button-container,
+    .about,
+    .projects-page,
+    .project-cards,
+    .contact {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-container {
+        padding-top: 24px;
+    }
+    .skill-section h2 {
+        padding-top: 16px;
+    }
+
+    .skills {
+        padding: 8px;
+    }
+
+    .projects {
+        align-items: center;
+        margin: 16px;
+        padding: 8px;
+    }
+    .contact {
+            grid-area: main;
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            grid-template-areas: 
+                "heading"
+                "content"
+                "content"
+                "content"
+                "content";
+        }
+    
+        .heading {
+            grid-row: 1/2;
+            text-align: center;
+            position: top;
+            
+        }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     .container {
         display: grid;
         place-items: center;
@@ -94,7 +140,8 @@ p {
             "main";
     background: rgba(0, 153, 255, 0.7);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+    overflow-y: scroll;
     }
     
     header {
@@ -104,7 +151,19 @@ p {
     main {
         grid-area: main;
     }
-    
+
+    .home,
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .button-container {
+        padding-top: 24px;
+    }
+
     .about {
         display: grid;
         grid-template-rows: repeat(3, auto);
@@ -130,7 +189,8 @@ p {
     
     .skill-section h2 {
         grid-column: 1/4;
-        grid-row: 1/2
+        grid-row: 1/2;
+        padding: 20px;
     }
     
     .logos {
@@ -161,10 +221,16 @@ p {
     .skills {
         margin: 8px;
     }
-    
+
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 993px) {
     p {
         font-size: 18px;
     }
@@ -178,13 +244,12 @@ p {
     }
 
     .element {
-        width: 80%;
+        min-width: 80%;
         height: 80%;
         border-radius: 15px;
         margin: auto;
         padding: 20px;
         display: grid;
-        /*grid-template-columns: repeat(12, auto);*/
         grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr;
         gap: 4px;
         grid-template-areas: 
@@ -197,8 +262,6 @@ p {
         background: rgba(0, 153, 255, 0.7);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-        /*backdrop-filter: blur(5px);*/
-        /*-webkit-backdrop-filter: blur(5px);*/
     }
 
     header {
@@ -229,21 +292,17 @@ p {
     }
 
     .navbar a:link, 
-    .navbar a:visited,
-    button a:link,
-    button a:visited {
+    .navbar a:visited {
         color:#f8f3ea;
     }
 
-    .navbar a:hover,
-    button a:hover {
+    .navbar a:hover {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 20px;
     }
 
     .navbar a:active,
-    .projects a:active,
-    button a:active {
+    .projects a:active {
         color: rgb(0, 153, 255);
         font-style: bold;
     }
@@ -259,7 +318,7 @@ p {
     }
 
     .btn:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background-color:rgb(0, 153, 255);
     }
 
     .about p {
@@ -312,14 +371,6 @@ p {
         display: grid;
         grid-template-columns: auto auto auto;
         place-items: center;
-    }
-
-    .projects {
-        border-radius: 16px;
-        width: 200px;
-        height: 225px;
-        border:rgb(0, 153, 255) solid 1px;
-        background-color: rgba(0, 153, 255, 0.5);
     }
 
     .contact-me {
@@ -385,6 +436,16 @@ p {
     border:rgba(255, 255, 255, 0.2) solid 0.5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #f8f3ea;
+}
+
+.projects {
+    border-radius: 16px;
+    margin: 16px;
+    padding: 8px;
+    width: 200px;
+    height: 225px;
+    border:rgb(0, 153, 255) solid 1px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .contact-me h3 {
