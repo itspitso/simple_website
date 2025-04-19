@@ -35,6 +35,14 @@ p {
     text-decoration: none;
 }
 
+.navbar a {
+    color: #f8f3ea;
+}
+
+.navbar a:active {
+    color: rgb(0, 153, 255);
+}
+
 .navbar a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
