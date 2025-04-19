@@ -21,6 +21,75 @@ p {
     font-size: 16px;
 }
 
+.navbar {
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.home, 
+.about,
+.projects-page, 
+.contact-me {
+    text-align: center;
+}
+
+.avatar {
+    width: 15.5em;
+    height: 15.5em;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    width: 10em;
+    border-radius: 20px;
+    margin: 0.3em;
+    padding: 0.6em 0.9em;
+    border:rgba(255, 255, 255, 0.2) solid 0.5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f8f3ea;
+}
+
+.projects {
+    border-radius: 16px;
+    margin: 16px;
+    padding: 8px;
+    width: 200px;
+    height: 225px;
+    border:rgb(0, 153, 255) solid 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-me h3 {
+    margin-top: 24px;
+}
+
+.contact-me a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 576px) {
     .container {
         display: grid;
@@ -33,7 +102,7 @@ p {
     }
     
     .element {
-        width: 90%;
+        min-width: 90%;
         border-radius: 15px;
         min-height: 100vh;
         margin: auto;
@@ -51,6 +120,8 @@ p {
     background: rgba(0, 153, 255, 0.7);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow-y: auto;
     }
 
     header {
@@ -93,23 +164,23 @@ p {
         padding: 8px;
     }
     .contact {
-            grid-area: main;
-            display: grid;
-            grid-template-rows: 50px 1fr;
-            grid-template-areas: 
-                "heading"
-                "content"
-                "content"
-                "content"
-                "content";
-        }
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            "heading"
+            "content"
+            "content"
+            "content"
+            "content";
+    }
     
-        .heading {
-            grid-row: 1/2;
-            text-align: center;
-            position: top;
-            
-        }
+    .heading {
+        grid-row: 1/2;
+        text-align: center;
+        position: top;
+        
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -377,82 +448,4 @@ p {
         display: grid;
         place-items: center;
     }
-}
-
-.navbar {
-    justify-content: center;
-    justify-items: center;
-    position: sticky;
-}
-
-.navbar a {
-    padding: 10px 15px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.navbar a:link, 
-.navbar a:visited {
-    color:#f8f3ea;
-}
-
-.navbar a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-}
-
-.navbar a:active,
-.projects a:active {
-    color: rgb(0, 153, 255);
-    font-style: bold;
-}
-
-
-.home, 
-.about,
-.projects-page, 
-.contact-me {
-    text-align: center;
-}
-
-.avatar {
-    width: 15.5em;
-    height: 15.5em;
-}
-.button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    display: inline-block;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    width: 10em;
-    border-radius: 20px;
-    margin: 0.3em;
-    padding: 0.6em 0.9em;
-    border:rgba(255, 255, 255, 0.2) solid 0.5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #f8f3ea;
-}
-
-.projects {
-    border-radius: 16px;
-    margin: 16px;
-    padding: 8px;
-    width: 200px;
-    height: 225px;
-    border:rgb(0, 153, 255) solid 1px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.contact-me h3 {
-    margin-top: 24px;
-}
-
-.contact-me a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
 }
