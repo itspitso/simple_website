@@ -263,8 +263,6 @@ p {
     }
     
     .skill-section {
-        grid-row: 3/4;
-        grid-column: 1/5;
         display: grid;
         justify-items: center;
         grid-template-columns: auto auto auto auto;
@@ -283,6 +281,10 @@ p {
     
     .skills {
         margin: 8px;
+        padding-top: 20px;
+        grid-row: 2;
+        width: 100px;
+        border-radius: 15px;
     }
 
     .project-cards {
