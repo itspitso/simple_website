@@ -262,18 +262,9 @@ p {
         grid-row: 2/3;
     }
     
-    /*.skill-section {
-        grid-row: 3/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-        gap: 4px;
-        align-items: center;
-        justify-items: center;
-    }
-    */
     .skill-section {
         grid-row: 3/4;
+        grid-column: 1/5;
         display: grid;
         justify-items: center;
         grid-template-columns: auto auto auto auto;
