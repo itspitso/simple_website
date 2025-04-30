@@ -262,7 +262,7 @@ p {
         grid-row: 2/3;
     }
     
-    .skill-section {
+    /*.skill-section {
         grid-row: 3/4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -271,9 +271,16 @@ p {
         align-items: center;
         justify-items: center;
     }
-    
+    */
+    .skill-section {
+        grid-row: 3/4;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto auto auto auto;
+    }
+
     .skill-section h2 {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 1/2;
         padding: 20px;
     }
@@ -281,26 +288,6 @@ p {
     .logos {
         width: 35px;
         height: 35px;
-    }
-    
-    .figma, .html, .css {
-        grid-row: 2/3;
-    }
-    
-    .js, .python, .github {
-        grid-row: 3/4;
-    }
-    
-    .figma, .js {
-        grid-column: 1/2;
-    }
-    
-    .html, .python {
-        grid-column: 2/3;
-    }
-    
-    .css, .github {
-        grid-column: 3/4;
     }
     
     .skills {
@@ -421,13 +408,14 @@ p {
 
     .skill-section {
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-items: center;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: 50px 1fr;
     }
 
     .skill-section h2 {
         grid-row: 1;
-        grid-column: 1 / 8;
+        grid-column: 1 / 5;
         padding: 20px;
     }
 
